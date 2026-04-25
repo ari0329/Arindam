@@ -81,7 +81,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 //   3. Copy the Access Key they give you
 //   4. Replace YOUR_WEB3FORMS_ACCESS_KEY below with that key
 
-const FORM_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'; // ← replace this
+const FORM_ACCESS_KEY = '62b35747-d993-49d1-b004-80840ee7d926'; // ← replace this
 
 async function sendMessage() {
   const btn      = document.getElementById('submitBtn');
