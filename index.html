@@ -76,7 +76,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-num">2+</span>
+            <span class="stat-num">4+</span>
             <span class="stat-label">Projects Built</span>
           </div>
           <div class="stat-item">
@@ -311,133 +311,249 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
-    <div class="projects-header">
-      <div class="reveal">
-        <div class="section-label">Portfolio</div>
-        <h2 class="section-title">Featured <span>Projects</span></h2>
-      </div>
-      <a href="https://github.com/ari0329" target="_blank" class="btn-ghost reveal"
-        style="font-size:0.85rem; padding: 10px 20px;">
-        View All on GitHub →
-      </a>
+<section id="projects">
+  <div class="projects-header">
+    <div class="reveal">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
     </div>
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-visual" style="background: linear-gradient(135deg, #0a1f0a, #1a3a1a);">
-          <div class="proj-icon">🌾</div>
-          <div
-            style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(0,200,100,0.15), transparent 70%);">
-          </div>
-        </div>
-        <div class="project-body">
-          <span class="project-badge badge-featured">⭐ Featured</span>
-          <div class="project-name">Agrisetu — Smart Agricultural IoT Dashboard</div>
-          <p class="project-desc">A live IoT dashboard receiving real-time soil moisture, temperature, and water level
-            data from an ESP8266 device. Features a Random Forest ML model for crop predictions, Chart.js telemetry
-            graphs, and colour-coded sensor alerts.</p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span><span class="stack-tag">Flask</span>
-            <span class="stack-tag">ESP8266</span><span class="stack-tag">C++</span>
-            <span class="stack-tag">Scikit-Learn</span><span class="stack-tag">Chart.js</span>
-            <span class="stack-tag">ReportLab</span><span class="stack-tag">ThingESP</span>
-          </div>
-          <div class="project-links">
-            <a href="https://agrisetu-dashboard.onrender.com/" target="_blank" class="proj-link proj-link-primary">
-              <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-              Live Demo
-            </a>
-            <a href="https://github.com/ari0329" target="_blank" class="proj-link proj-link-ghost">GitHub</a>
-          </div>
+    <a href="https://github.com/ari0329" target="_blank" class="btn-ghost reveal"
+      style="font-size:0.85rem; padding: 10px 20px;">
+      View All on GitHub →
+    </a>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- DSLM -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #0a0d1f, #0d1a3a);">
+        <div class="proj-icon">🧠</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(99,102,241,0.2), transparent 70%);">
         </div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-visual" style="background: linear-gradient(135deg, #0d1c35, #0d2a52);">
-          <div class="proj-icon">📋</div>
-          <div
-            style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(0,119,255,0.15), transparent 70%);">
-          </div>
+      <div class="project-body">
+        <span class="project-badge badge-ml">⭐ AI-Powered</span>
+        <div class="project-name">DSLM — Data Science Language Model Assistant</div>
+        <p class="project-desc">A context-aware AI assistant that automatically identifies your ML task, recommends
+          ranked algorithms, generates production-ready Python pipelines, and explains model decisions using SHAP and
+          LIME. Supports 10 task types including regression, clustering, anomaly detection, and hyperparameter
+          tuning.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">React</span><span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">Claude API</span><span class="stack-tag">Scikit-Learn</span>
+          <span class="stack-tag">XGBoost</span><span class="stack-tag">Optuna</span>
+          <span class="stack-tag">SHAP</span><span class="stack-tag">LIME</span>
         </div>
-        <div class="project-body">
-          <span class="project-badge badge-web">WordPress Plugin</span>
-          <div class="project-name">Dynamic Contact Form Plugin</div>
-          <p class="project-desc">A lightweight, production-ready WordPress plugin that creates and manages customizable
-            contact forms with AJAX-based submissions and CAPTCHA validation to protect against spam and bots.</p>
-          <div class="project-stack">
-            <span class="stack-tag">PHP</span><span class="stack-tag">JavaScript</span>
-            <span class="stack-tag">jQuery</span><span class="stack-tag">WordPress</span>
-            <span class="stack-tag">AJAX</span><span class="stack-tag">CAPTCHA</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ari0329/Dynamic_Contact_form" target="_blank"
-              class="proj-link proj-link-primary">
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-              </svg>
-              View Code
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card reveal">
-        <div class="project-visual" style="background: linear-gradient(135deg, #1a0d35, #2d1060);">
-          <div class="proj-icon">📊</div>
-          <div
-            style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(123,47,255,0.2), transparent 70%);">
-          </div>
-        </div>
-        <div class="project-body">
-          <span class="project-badge badge-ml">Dashboard</span>
-          <div class="project-name">Dashboard System</div>
-          <p class="project-desc">A PHP-based admin dashboard system providing dynamic content management, data
-            visualization, and administrative controls for web applications.</p>
-          <div class="project-stack">
-            <span class="stack-tag">PHP</span><span class="stack-tag">MySQL</span>
-            <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ari0329/dashboard_system" target="_blank" class="proj-link proj-link-primary">
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-              </svg>
-              View Code
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card reveal">
-        <div class="project-visual" style="background: linear-gradient(135deg, #1f1500, #3d2900);">
-          <div class="proj-icon">🏆</div>
-          <div
-            style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(245,200,66,0.15), transparent 70%);">
-          </div>
-        </div>
-        <div class="project-body">
-          <span class="project-badge badge-featured">WordPress</span>
-          <div class="project-name">Achievements Pro Plugin</div>
-          <p class="project-desc">A WordPress plugin for creating and displaying achievements and awards on websites.
-            Supports custom achievement types, criteria, and display options.</p>
-          <div class="project-stack">
-            <span class="stack-tag">PHP</span><span class="stack-tag">WordPress</span>
-            <span class="stack-tag">jQuery</span><span class="stack-tag">CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ari0329/Achivements-pro" target="_blank" class="proj-link proj-link-primary">
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-              </svg>
-              View Code
-            </a>
-          </div>
+
+        <div class="project-links">
+          <a href="https://dslm-app.onrender.com/" target="_blank" class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Live Demo
+          </a>
+
+          <a href="https://github.com/ari0329/dslm-app" target="_blank" class="proj-link proj-link-ghost">
+            GitHub
+          </a>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- GuardNet -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #0f0a0a, #2a0a0a);">
+        <div class="proj-icon">🛡️</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(239,68,68,0.18), transparent 70%);">
+        </div>
+      </div>
+
+      <div class="project-body">
+        <span class="project-badge badge-featured">⭐ Deep Learning</span>
+
+        <div class="project-name">GuardNet — AI Real-Time Violence Detection System</div>
+
+        <p class="project-desc">A production-ready AI system that detects violent activity from live webcam feeds or
+          recorded video using a CNN + LSTM deep learning pipeline. Features MobileNetV2 spatial feature extraction,
+          Bidirectional LSTM temporal reasoning, YOLOv8 multi-person detection, motion heatmaps, and a real-time
+          Streamlit dashboard with multi-channel alerts.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">TensorFlow</span>
+          <span class="stack-tag">MobileNetV2</span><span class="stack-tag">BiLSTM</span>
+          <span class="stack-tag">YOLOv8</span><span class="stack-tag">OpenCV</span>
+          <span class="stack-tag">Streamlit</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://guardnet.onrender.com/" target="_blank" class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Live Demo
+          </a>
+
+          <a href="https://github.com/ari0329/guardnet_system-base" target="_blank"
+            class="proj-link proj-link-ghost">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agrisetu -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #0a1f0a, #1a3a1a);">
+        <div class="proj-icon">🌾</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(0,200,100,0.15), transparent 70%);">
+        </div>
+      </div>
+
+      <div class="project-body">
+        <span class="project-badge badge-featured">⭐ Featured</span>
+
+        <div class="project-name">Agrisetu — Smart Agricultural IoT Dashboard</div>
+
+        <p class="project-desc">A live IoT dashboard receiving real-time soil moisture, temperature, and water level
+          data from an ESP8266 device. Features a Random Forest ML model for crop predictions, Chart.js telemetry
+          graphs, and colour-coded sensor alerts.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">Python</span><span class="stack-tag">Flask</span>
+          <span class="stack-tag">ESP8266</span><span class="stack-tag">C++</span>
+          <span class="stack-tag">Scikit-Learn</span><span class="stack-tag">Chart.js</span>
+          <span class="stack-tag">ReportLab</span><span class="stack-tag">ThingESP</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://agrisetu-dashboard.onrender.com/" target="_blank"
+            class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Live Demo
+          </a>
+
+          <a href="https://github.com/ari0329" target="_blank" class="proj-link proj-link-ghost">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Contact Form Plugin -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #0d1c35, #0d2a52);">
+        <div class="proj-icon">📋</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(0,119,255,0.15), transparent 70%);">
+        </div>
+      </div>
+
+      <div class="project-body">
+        <span class="project-badge badge-web">WordPress Plugin</span>
+
+        <div class="project-name">Dynamic Contact Form Plugin</div>
+
+        <p class="project-desc">A lightweight, production-ready WordPress plugin that creates and manages customizable
+          contact forms with AJAX-based submissions and CAPTCHA validation to protect against spam and bots.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">PHP</span><span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">jQuery</span><span class="stack-tag">WordPress</span>
+          <span class="stack-tag">AJAX</span><span class="stack-tag">CAPTCHA</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/ari0329/Dynamic_Contact_form" target="_blank"
+            class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard System -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #1a0d35, #2d1060);">
+        <div class="proj-icon">📊</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(123,47,255,0.2), transparent 70%);">
+        </div>
+      </div>
+
+      <div class="project-body">
+        <span class="project-badge badge-ml">Dashboard</span>
+
+        <div class="project-name">Dashboard System</div>
+
+        <p class="project-desc">A PHP-based admin dashboard system providing dynamic content management, data
+          visualization, and administrative controls for web applications.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">PHP</span><span class="stack-tag">MySQL</span>
+          <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JavaScript</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/ari0329/dashboard_system" target="_blank"
+            class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements Pro -->
+    <div class="project-card reveal">
+      <div class="project-visual" style="background: linear-gradient(135deg, #1f1500, #3d2900);">
+        <div class="proj-icon">🏆</div>
+        <div
+          style="position:absolute;inset:0;background:radial-gradient(circle at 50% 60%, rgba(245,200,66,0.15), transparent 70%);">
+        </div>
+      </div>
+
+      <div class="project-body">
+        <span class="project-badge badge-featured">WordPress</span>
+
+        <div class="project-name">Achievements Pro Plugin</div>
+
+        <p class="project-desc">A WordPress plugin for creating and displaying achievements and awards on websites.
+          Supports custom achievement types, criteria, and display options.</p>
+
+        <div class="project-stack">
+          <span class="stack-tag">PHP</span><span class="stack-tag">WordPress</span>
+          <span class="stack-tag">jQuery</span><span class="stack-tag">CSS</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/ari0329/Achivements-pro" target="_blank"
+            class="proj-link proj-link-primary">
+            <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- EDUCATION -->
   <section id="education">
